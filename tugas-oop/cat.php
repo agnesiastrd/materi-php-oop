@@ -1,18 +1,18 @@
 <?php
-class Ape extends Animal {
+class Cat extends Animal {
     // Properties
     public $name;
     public $legs;
     public $cold_blooded;
-    public $yell;
+    public $jump;
 
     // Methods
-    function __construct($name, $legs, $cold_blooded, $yell)
+    function __construct($name, $legs, $cold_blooded, $jump)
     {
         $this->name = $name;
         $this->legs = $legs;
         $this->cold_blooded = $cold_blooded;
-        $this->yell = $yell;
+        $this->jump = $jump;
 
     }
     function get_name() 
@@ -38,24 +38,24 @@ class Ape extends Animal {
         return $this->cold_blooded;
     }
 
-    function set_yell($yell) 
+    function set_jump($jump) 
     {
-        $this->yell = $yell;
+        $this->jump = $jump;
     }
-    function get_yell() 
+    function get_jump() 
     {
-        return $this->yell;
+        return $this->jump;
     }
 }
 
-$sungokong = new Ape("kera sakti", "2", "no", "Auooo");
-echo "Name : " . $sungokong->get_name();
+$cat = new Cat ("prety", "4", "No", "Meoowww Meoowww");
+echo "Name : " . $cat->get_name();
 echo "<br>";
-echo "Legs : " . $sungokong->get_legs();
+echo "Legs : " . $cat->get_legs();
 echo "<br>";
-echo "Cold Blooded : " . $sungokong->get_cold_blooded();
+echo "Cold Blooded : " . $cat->get_cold_blooded();
 echo "<br>";
-echo "Yell : " . $sungokong->get_yell();
+echo "Jump : " . $cat->get_jump();
 echo "<br>";
 
 
